@@ -6,11 +6,6 @@
 #Student #:     W023947
 #Student Name:  Chauntel Smith
 # YOUR CODE STARTS HERE, each line must be indented (one tab)
-#Global Values
-#weekDays = [1, 2, 3, 4, 5]   #I could not for the life of me figure out how to not have this as a global
-#Users hours per day and stored as list
-
-#Global Values
 #weekDays = [1, 2, 3, 4, 5]   #I could not for the life of me figure out how to not have this as a global
 #Users hours per day and stored as list
 def userHours(weekDays):
