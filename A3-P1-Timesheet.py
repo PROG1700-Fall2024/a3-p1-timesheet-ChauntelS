@@ -24,13 +24,13 @@ def calculation(hours):
 def slackCalculation(hours):
     slackDays = [(i + 1, x) for i, x in enumerate(hours) if x < 7] #<<------- I spend HOURS on this line, I tried google, I tried YouTub, I cound not get it.
     allSlackDays = len(slackDays)                                            #I had to ask A.I. "how to call the values of a list that are less than 7" in order to get it to work
-    return slackDays,allSlackDays
-#And again another math section
-def slackDayAmount(slackDays,allSlackDays):
-    if allSlackDays >0:
-        print("Days you slacked off (i.e. worked less than 7 hours):")
-        for day, hours in slackDays:
-            print(f"Day #{day}: {hours} hours")
+    return slackDays,allSlackDays                                  #         |
+#And again another math section                                    #         |
+def slackDayAmount(slackDays,allSlackDays):                        #         |             
+    if allSlackDays >0:                                            #         |
+        print("Days you slacked off (i.e. worked less than 7 hours):")#      |
+        for day, hours in slackDays:                               #         |
+            print(f"Day #{day}: {hours} hours") #<<--------------------------
     else:
         print("Congratulations not one of your work days was less than 7 hours, you work harder than most!")
    
@@ -52,7 +52,7 @@ def main():
         print(f"The total number of hours worked was : {totalHours}")
         print(f"The average number of hours worked each day was: {average}")
         print("---------------------------------------------------------------------------------------------------------------------------------------------------")
-        print(slackDayAmount(slackDays,allSlackDays)) 
+        slackDayAmount(slackDays,allSlackDays)
         #Confirming information inputted by user is correct while displaying the final calculations
         correct = input("Are these hours correct? (Y/N): ")     
         if correct.upper() == "Y":
@@ -61,6 +61,4 @@ def main():
         else:
             print("Sorry about that, lets try again!")  #Message about trying again
 main()      
-
-  
     # YOUR CODE ENDS HERE
